@@ -1,0 +1,13 @@
+.icon{
+    height: 40px;
+    width: auto;
+}
+
+.profile-pic{
+    height:60px;
+    width:auto;
+    border-radius: 50%;
+}
+.row2 img{
+    border-radius: 50%;
+}
