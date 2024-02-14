@@ -11,3 +11,11 @@
 .row2 img{
     border-radius: 50%;
 }
+body{
+    display: grid;
+    grid-template: 1fr 6fr/1fr 4fr;
+}
+aside{
+    grid-column-start: 1;
+    grid-row: 1/3;
+}
