@@ -2,7 +2,9 @@
     height: 30px;
     width: auto;
 }
-
+.filter{
+    filter: invert(100%) sepia(34%) saturate(7423%) hue-rotate(195deg) brightness(132%) contrast(104%);
+}
 .profile-pic{
     height:60px;
     width:auto;
@@ -13,11 +15,17 @@
 }
 body{
     display: grid;
-    grid-template: 1fr 6fr/1fr 4fr;
+    grid-template: 1fr 6fr/1fr 4.5fr;
+    margin:0px;
+    
 }
 aside{
     grid-column-start: 1;
     grid-row: 1/3;
+    background-color: rgb(66, 164, 245);
+    color:white;
+    font-weight: bold;
+    padding:10px 0px 0px 30px;
 }
 header{
     display: grid;
@@ -41,4 +49,26 @@ main{
 .card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
+ul{
+    list-style-type: none;
+    padding-left:20px;
+    margin-top:60px;
+    font-size:25px;
+}
+li{
+    margin-bottom:25px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+}
+.logo{
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+}
+.logo span{
+    margin:auto 0px;
 }
