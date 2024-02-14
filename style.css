@@ -34,3 +34,11 @@ input[type="search"]{
 #bell{
     margin-left: 30px;
 }
+main{
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+}
